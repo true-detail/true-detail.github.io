@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>True Detail: полировка и керамика в Сергиевом Посаде</title>
 <meta name="description" content="Полировка кузова, керамика, полировка фар, химчистка салона. Сергиев Посад, микрорайон Углич. Ежедневно 9:00–23:00. 4,8 на Яндекс Картах.">
-<meta name="robots" content="noindex, nofollow"><!-- черновик: снять noindex при запуске -->
 <meta name="theme-color" content="#0a0b0a">
 <link rel="icon" href="img/logo.jpg">
 <meta property="og:type" content="website">
@@ -654,13 +653,14 @@ buildMq();addEventListener('resize',buildMq);
 <!-- Яндекс Метрика. Вставить номер счётчика в YM, пока пусто, ничего не грузится.
      Цели (JavaScript-событие): lead_tg, lead_wa, lead_call (= обращения), book_open, route -->
 <script>
-var YM='';
+var YM=114629140; // счётчик True Detail, тест с 24.11
 (()=>{if(!YM)return;
-(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id='+YM,'ym');
 ym(YM,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
 const goal=h=>/t\.me\//.test(h)?'lead_tg':/wa\.me\//.test(h)?'lead_wa':/^tel:/.test(h)?'lead_call':/rtext=/.test(h)?'route':'';
 document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a)return;const g=goal(a.getAttribute('href')||'');if(g)ym(YM,'reachGoal',g)},true);
 })();
 </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/114629140" style="position:absolute;left:-9999px" alt=""></div></noscript>
 </body>
 </html>
